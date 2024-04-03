@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Customer Confirmation Form</title>
+
+<style>
+
+.error
+{color:red}
+
+</style>
+
+</head>
+<body>
+
+<label>The Customer is confirmed: </label>
+<span th:text="${customer.firstName + ' ' + customer.lastName}"></span>
+<br><br>
+<label>Free Passes: </label>
+<span th:text="${customer.freePasses}"></span>
+<br><br>
+<label>Postal Code: </label>
+<span th:text="${customer.postalCode}"></span>
+<br><br>
+<label>Course Code: </label>
+<span th:text="${customer.courseCode}"></span>
+
+</body>
+</html>
