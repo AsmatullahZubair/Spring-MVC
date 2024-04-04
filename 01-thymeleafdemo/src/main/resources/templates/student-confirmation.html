@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Welcome</title>
+<link rel="stylesheet" th:href="@{/css/demo.css}" />
+</head>
+<body>
+<h1>Student Confirmation</h1>
+The Student <span th:text = "${student.firstName} + ' ' +${student.lastName}" />
+is from <span th:text = "${student.country}" />
+his language is <span th:text = "${student.language}" />
+he opted <span th:text = "${student.courses}" />
+</body>
+</html>
